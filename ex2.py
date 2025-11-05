@@ -1,0 +1,2 @@
+nome="SENAC"
+print(nome)

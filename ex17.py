@@ -1,0 +1,6 @@
+n1=float(input("Digite o valor "))
+print("Quanto é 10% desse valor?")
+porcentagem=n1*(0.1)
+print(f"O valor de 10% de {n1} é {porcentagem}")
+total=n1*(1.1)
+print(f"Somando 10% ao valor {n1} temos {total}")
