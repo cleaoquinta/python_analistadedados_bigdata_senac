@@ -1,0 +1,91 @@
+**Aula 11**
+
+
+
+Banco de Dados:
+
+
+
+Varias tabelas que estão relacionadas entre si.
+
+
+
+-> Na aula estamos usando o SQLite OnLine: [*https://sqliteonline.com/*](https://sqliteonline.com/)
+
+
+
+
+
+* Chave primária: Exclusiva para cada indivíduo. É quem vai ler todos as outras informações da tabela. \[ícone de uma chave]
+* Chave Estrangeira: Acontece quando a chave primária de um tabela aparece em outra tabela, para relacionar os dados de uma com a outra. \[ícone de uma chave dentro de um quadrado]
+* Tabela Associativa: É uma tabela que só tem chaves estrangeiras. Serve pra associar duas outras tabelas.
+* Varchar: Tipo de campo onde se sabe que não vão haver somas matemáticas. Lê letras e/ou números.
+
+
+
+
+
+*Comando para criar tabela:*
+
+
+
+create database senac;
+
+
+
+CREATE TABLE ALUNO(
+
+matricula varchar(5) PRIMARY KEY,
+
+nome varchar(50),
+
+idade int
+
+);
+
+
+
+
+
+*Criando a segunda tabela:*
+
+
+
+CREATE TABLE PROFESSOR(
+
+cpf varchar(14) PRIMARY KEY,
+
+nome varchar(100)
+
+disciplina varchar(30)
+
+email varchar(30)
+
+idade int
+
+);
+
+
+
+-> Para deletar tabela: DROP
+
+
+
+
+
+*Cadastrar dados na tabela:*
+
+
+
+insert into PROFESSOR (cpf, nome, disciplina, email, idade) VALUES ("128.116.487-98", "Carolina Leão", "Química", "c.leaoquinta@gmail.com", "37")
+
+
+
+
+
+*Exibir e selecionar os dados:*
+
+
+
+SELECT \* FROM PROFESSOR;
+
